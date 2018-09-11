@@ -1,0 +1,13 @@
+body {
+  background-color: white;
+}
+
+header, aside, section, article, footer {
+  outline: 1px solid black;
+}
+
+p {
+  position: relative;
+  text-align: center;
+  top: 47%;
+}

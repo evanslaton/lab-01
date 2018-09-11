@@ -1,0 +1,46 @@
+div {
+  width: 480px;
+  margin: 50px auto;
+}
+
+div:after { 
+  content: "."; 
+  visibility: hidden; 
+  display: block; 
+  height: 0; 
+  clear: both;
+}
+
+@media only screen and (min-width: 768px) {
+  div {
+    width: 960px;
+  }
+}
+
+header {
+  height: 75px;
+  background: url(https://placehold.it/480x75/D8D8D8) center center no-repeat;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    height: 100px;
+    background: url(https://placehold.it/960x100/B9F7BC) center center no-repeat;
+  }
+}
+
+footer {
+  clear: both;
+  height: 80px;
+  background: url(https://placehold.it/480x80/D8D8D8) center center no-repeat;
+}
+
+@media only screen and (min-width: 768px) {
+  footer {
+    clear: none;
+    float: left;
+    width: 760px;
+    height: 150px;
+    background: url(https://placehold.it/760x150/B9F7BC) center center no-repeat;
+  }
+}

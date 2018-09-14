@@ -1,6 +1,6 @@
 aside {
   height: 150px;
-  background: url(https://placehold.it/480x150/D8D8D8) center center no-repeat;
+  background-color: #D8D8D8;
 }
 
 @media only screen and (min-width: 768px) {
@@ -8,13 +8,13 @@ aside {
     float: left;
     width: 200px;
     height: 600px;
-    background: url(https://placehold.it/200x600/B9F7BC) center center no-repeat;
+    background-color: #B9F7BC;
   }
 }
 
 section {
   height: 125px;
-  background: url(https://placehold.it/480x125/D8D8D8) center center no-repeat;
+  background-color: #D8D8D8;
 }
 
 @media only screen and (min-width: 768px) {
@@ -22,7 +22,7 @@ section {
     float: left;
     width: 380px;
     height: 200px;
-    background: url(https://placehold.it/380x200/B9F7BC) center center no-repeat;
+    background-color: #B9F7BC;
   }
 }
 
@@ -30,7 +30,7 @@ article {
   height: 250px;
   width: 240px;
   float: left;
-  background: url(https://placehold.it/240x250/D8D8D8) center center no-repeat;
+  background-color: #D8D8D8;
 }
 
 @media only screen and (min-width: 768px) {
@@ -38,6 +38,6 @@ article {
     float: left;
     width: 190px;
     height: 250px;
-    background: url(https://placehold.it/190x250/B9F7BC) center center no-repeat;
+    background-color: #B9F7BC;
   }
 }

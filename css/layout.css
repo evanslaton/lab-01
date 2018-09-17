@@ -1,46 +1,108 @@
+/* Mobile View */
 div {
   width: 480px;
+  height: 1055px;
   margin: 50px auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 7.1090047393% 14.2180094786% 11.8483412322% 11.8483412322% 23.6966824644% 23.6966824644% 7.5829383886%;
 }
 
-div:after { 
-  content: "."; 
-  visibility: hidden; 
-  display: block; 
-  height: 0; 
-  clear: both;
-}
-
-@media only screen and (min-width: 768px) {
-  div {
-    width: 960px;
-  }
+header, aside, section, footer {
+  grid-column-start: span 2;
 }
 
 header {
-  height: 75px;
-  background-color: #D8D8D8;
+  grid-row-start: 1;
 }
 
-@media only screen and (min-width: 768px) {
-  header {
-    height: 100px;
-    background-color: #B9F7BC;
-  }
+aside {
+  grid-row-start: 2;
+}
+
+section {
+  grid-row-start: 3;
+}
+
+section:nth-child(4) {
+  grid-row-start: 4;
+}
+
+article {
+  grid-column-start: 1;
+  grid-row-start: 5; 
+}
+
+article:nth-child(6) {
+  grid-column-start: 2;
+  grid-row-start: 5; 
+}
+
+article:nth-child(7), article:nth-child(8)  {
+  grid-row-start: 6;
+}
+
+article:nth-child(7) {
+  grid-column-start: 1;
+}
+
+article:nth-child(8) {
+  grid-column-start: 2;
 }
 
 footer {
-  clear: both;
-  height: 80px;
-  background-color: #D8D8D8;
+  grid-row-start: 7;
 }
 
+/* Tablet and Desktop View */
 @media only screen and (min-width: 768px) {
+  div {
+    width: 960px;
+    height: 700px;
+    margin: 50px auto;
+    grid-template-columns: 20.8333333333% 19.7916666666% 19.7916666666% 19.7916666666% 19.7916666666%;
+    grid-template-rows: 14.2857142857% 28.5714285714% 35.7142857142% 21.4285714285%;
+  }
+
+  header {
+    grid-column-start: span 5;
+  }
+
+  aside {
+    grid-column-start: 1;
+    grid-row-start: 2 / 4;
+  }
+
+  section, section:nth-child(4) {
+    grid-row-start: 2;
+  }
+
+  section:nth-child(4) {
+    grid-column: 4 / 6;
+  }
+
+  article, article:nth-child(6), article:nth-child(7), article:nth-child(8) {
+    grid-row-start: 3;
+  }
+
+  article {
+    grid-column-start: 2;
+  }
+
+  article:nth-child(6) {
+    grid-column-start: 3;
+  }
+
+  article:nth-child(7) {
+    grid-column-start: 4;
+  }
+
+  article:nth-child(8) {
+    grid-column-start: 5;
+  }
+
   footer {
-    clear: none;
-    float: left;
-    width: 760px;
-    height: 150px;
-    background-color: #B9F7BC;
+    grid-column: 2 / 6;
+    grid-row-start: 4;
   }
 }

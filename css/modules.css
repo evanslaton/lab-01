@@ -1,43 +1,18 @@
-aside {
-  height: 150px;
+/* Mobile View */
+div {
   background-color: #D8D8D8;
 }
 
+/* Tablet View */
 @media only screen and (min-width: 768px) {
-  aside {
-    float: left;
-    width: 200px;
-    height: 600px;
+  div {
     background-color: #B9F7BC;
   }
 }
 
-section {
-  height: 125px;
-  background-color: #D8D8D8;
-}
-
-@media only screen and (min-width: 768px) {
-  section {
-    float: left;
-    width: 380px;
-    height: 200px;
-    background-color: #B9F7BC;
-  }
-}
-
-article {
-  height: 250px;
-  width: 240px;
-  float: left;
-  background-color: #D8D8D8;
-}
-
-@media only screen and (min-width: 768px) {
-  article {
-    float: left;
-    width: 190px;
-    height: 250px;
-    background-color: #B9F7BC;
+/* Desktop View */
+@media only screen and (min-width: 960px) {
+  div {
+    background-color: rgb(146, 230, 255);
   }
 }

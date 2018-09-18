@@ -70,7 +70,7 @@ footer {
 
   aside {
     grid-column-start: 1;
-    grid-row-start: 2 / 4;
+    grid-row: 2 / 5;
   }
 
   section, section:nth-child(4) {

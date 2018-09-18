@@ -1,18 +1,114 @@
 /* Mobile View */
-div {
-  background-color: #D8D8D8;
+header {
+  background-color: red;
+}
+
+aside {
+  background-color: azure;
+}
+
+section {
+  background-color: black;
+}
+
+section:nth-child(4) {
+  background-color: purple;
+}
+
+article {
+  background-color: greenyellow;
+}
+
+article:nth-child(6) {
+  background-color: blue;
+}
+
+article:nth-child(7) {
+  background-color: orange;
+}
+
+article:nth-child(8) {
+  background-color: green;
+}
+
+footer {
+  background-color: grey;
 }
 
 /* Tablet View */
 @media only screen and (min-width: 768px) {
-  div {
-    background-color: #B9F7BC;
+  header {
+    background-color: grey;
+  }
+  
+  aside {
+    background-color: red;
+  }
+  
+  section {
+    background-color: azure;
+  }
+  
+  section:nth-child(4) {
+    background-color: black;
+  }
+  
+  article {
+    background-color: purple;
+  }
+  
+  article:nth-child(6) {
+    background-color: greenyellow;
+  }
+  
+  article:nth-child(7) {
+    background-color: blue;
+  }
+  
+  article:nth-child(8) {
+    background-color: orange;
+  }
+  
+  footer {
+    background-color: green;
   }
 }
 
 /* Desktop View */
 @media only screen and (min-width: 960px) {
-  div {
-    background-color: rgb(146, 230, 255);
+  header {
+    background-color: green;
+  }
+  
+  aside {
+    background-color: grey;
+  }
+  
+  section {
+    background-color: red;
+  }
+  
+  section:nth-child(4) {
+    background-color: azure;
+  }
+  
+  article {
+    background-color: black;
+  }
+  
+  article:nth-child(6) {
+    background-color: purple;
+  }
+  
+  article:nth-child(7) {
+    background-color: greenyellow;
+  }
+  
+  article:nth-child(8) {
+    background-color: blue;
+  }
+  
+  footer {
+    background-color: orange;
   }
 }
